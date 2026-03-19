@@ -9,7 +9,7 @@ public class Renting
 
     public static int IdCount { get; set; }
 
-    public Renting(Person Renter, Item RentedItem)
+    public Renting(Person renter, Item rentedItem)
     {
         this.Renter = Renter;
         this.RentedItem = RentedItem;

@@ -2,7 +2,27 @@
 
 public class Student : Person
 {
-    public Student(int id, string firstName, string lastName) : base(id, firstName, lastName)
+    public string Major
     {
+        get;
+        set;
+    }
+
+    public int Group
+    {
+        get;
+        set;
+    }
+
+    public int Year
+    {
+        get;
+        set;
+    }
+    public Student(int id, string firstName, string lastName, string major, int group, int year) : base(id, firstName, lastName)
+    {
+        Major = major;
+        Group = group;
+        Year = year;
     }
 }

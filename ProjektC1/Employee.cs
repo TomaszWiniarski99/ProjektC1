@@ -2,7 +2,13 @@
 
 public class Employee : Person
 {
-    public Employee(int id, string firstName, string lastName) : base(id, firstName, lastName)
+    public string Position
     {
+        get;
+        set;
+    }
+    public Employee(int id, string firstName, string lastName, string position) : base(id, firstName, lastName)
+    {
+        Position = position;
     }
 }

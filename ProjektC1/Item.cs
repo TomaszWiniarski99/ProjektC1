@@ -13,4 +13,17 @@ public abstract class Item
         get;
         set;
     }
+
+    public int DaysRented
+    {
+        get;
+        set;
+    }
+
+    public Item(int maxDays, double price)
+    {
+        this.MaxDays = maxDays;
+        this.Price = price;
+        this.DaysRented = 0;
+    }
 }

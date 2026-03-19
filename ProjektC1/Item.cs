@@ -1,6 +1,16 @@
 ﻿namespace ProjektC1;
 
-public class Item
+public abstract class Item
 {
+    public int MaxDays
+    {
+        get;
+        set;
+    }
     
+    public double Price
+    {
+        get;
+        set;
+    }
 }

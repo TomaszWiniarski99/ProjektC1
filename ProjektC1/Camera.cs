@@ -1,6 +1,6 @@
 ﻿namespace ProjektC1;
 
-public class Camera
+public class Camera : Item
 {
     
 }

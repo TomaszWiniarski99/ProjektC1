@@ -1,6 +1,6 @@
 ﻿namespace ProjektC1;
 
-public class Projector
+public class Projector : Item
 {
     
 }

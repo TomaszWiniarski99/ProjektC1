@@ -1,6 +1,6 @@
 ﻿namespace ProjektC1;
 
-public class Laptop
+public class Laptop : Item
 {
     
 }

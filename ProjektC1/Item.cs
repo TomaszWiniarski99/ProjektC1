@@ -8,19 +8,13 @@ public abstract class Item
         set;
     }
     
-    public double Price
+    public double PricePerDay
     {
         get;
         set;
     }
 
-    public string Brand
-    {
-        get;
-        set;
-    }
-
-    public int DaysRented
+    public string Name
     {
         get;
         set;
@@ -32,7 +26,7 @@ public abstract class Item
         set;
     }
 
-    public bool Available
+    public Status ItemStatus
     {
         get;
         set;
@@ -44,14 +38,13 @@ public abstract class Item
         set;
     } = 0;
 
-    public Item(int maxDays, double price, string brand)
+    public Item(int maxDays, double pricePerDay, string name)
     {
         MaxDays = maxDays;
-        Price = price;
-        DaysRented = 0;
-        Brand = brand;
+        PricePerDay = pricePerDay;
+        Name = name;
+        ItemStatus = Status.Available;
         Id = IdCount;
-        Available = true;
         IdCount++;
     }
 }

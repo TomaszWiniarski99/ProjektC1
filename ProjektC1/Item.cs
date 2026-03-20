@@ -26,6 +26,12 @@ public abstract class Item
         set;
     }
 
+    public bool Available
+    {
+        get;
+        set;
+    }
+
     private static int IdCount
     {
         get;

@@ -15,7 +15,7 @@ public class Laptop : Item
     }
     public Laptop(int maxDays, double price, string brand, double screen, double ram) : base(maxDays, price, brand)
     {
-        this.Screen = screen;
-        this.Ram = ram;
+        Screen = screen;
+        Ram = ram;
     }
 }

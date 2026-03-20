@@ -15,7 +15,7 @@ public class Camera : Item
     }
     public Camera(int maxDays, double price, string brand, double memory, string lens) : base(maxDays, price, brand)
     {
-        this.Memory = memory;
-        this.Lens = lens;
+        Memory = memory;
+        Lens = lens;
     }
 }

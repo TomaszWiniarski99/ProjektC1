@@ -20,6 +20,12 @@ public abstract class Item
         set;
     }
 
+    public int DaysRented
+    {
+        get;
+        set;
+    }
+
     public int Id
     {
         get;
@@ -40,10 +46,12 @@ public abstract class Item
 
     public Item(int maxDays, double price, string brand)
     {
-        this.MaxDays = maxDays;
-        this.Price = price;
-        this.Brand = brand;
-        this.Id = IdCount;
+        MaxDays = maxDays;
+        Price = price;
+        DaysRented = 0;
+        Brand = brand;
+        Id = IdCount;
+        Available = true;
         IdCount++;
     }
 }

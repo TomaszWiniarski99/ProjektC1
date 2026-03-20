@@ -19,10 +19,12 @@ public class Student : Person
         get;
         set;
     }
-    public Student(int id, string firstName, string lastName, string major, int group, int year) : base(id, firstName, lastName)
+    public Student(string firstName, string lastName, string major, int group, int year) : base(firstName, lastName)
     {
         Major = major;
         Group = group;
         Year = year;
+        Type = UserType.Student;
+        MaxActiveRentals = 2;
     }
 }

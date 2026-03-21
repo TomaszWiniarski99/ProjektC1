@@ -13,7 +13,7 @@ public class Camera : Item
         get;
         set;
     }
-    public Camera(int maxDays, double price, string brand, double memory, string lens) : base(maxDays, price, brand)
+    public Camera(int maxDays, double price, string name, double memory, string lens) : base(maxDays, price, name)
     {
         Memory = memory;
         Lens = lens;

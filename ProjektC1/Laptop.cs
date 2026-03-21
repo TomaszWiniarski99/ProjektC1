@@ -13,7 +13,7 @@ public class Laptop : Item
         get;
         set;
     }
-    public Laptop(int maxDays, double price, string brand, double screen, double ram) : base(maxDays, price, brand)
+    public Laptop(int maxDays, double price, string name, double screen, double ram) : base(maxDays, price, name)
     {
         Screen = screen;
         Ram = ram;

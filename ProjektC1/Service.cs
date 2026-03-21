@@ -21,6 +21,11 @@ public class Service
         return items;
     }
     
+    public List<Item> GetAllAvailableItems()
+    {
+        return items.Where(i => i.ItemStatus == Status.Available).ToList();
+    }
+    
     public void RentItem(Person user, Item item, int days)
     {
         if (item.ItemStatus != Status.Available)

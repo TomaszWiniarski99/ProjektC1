@@ -13,7 +13,7 @@ public class Projector : Item
         get;
         set;
     }
-    public Projector(int maxDays, double price, string brand, double weight, double range) : base(maxDays, price, brand)
+    public Projector(int maxDays, double price, string name, double weight, double range) : base(maxDays, price, name)
     {
         Weight = weight;
         Range = range;

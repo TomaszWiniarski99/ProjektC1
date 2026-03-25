@@ -44,7 +44,6 @@ public abstract class Item
         PricePerDay = pricePerDay;
         Name = name;
         ItemStatus = Status.Available;
-        Id = IdCount;
-        IdCount++;
+        Id = IdCount++;
     }
 }
